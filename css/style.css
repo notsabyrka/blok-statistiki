@@ -222,3 +222,76 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f7fb;
+}
+
+.cards__list {
+  display: flex;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 24px;
+  border: 1px solid #e4e7ec;
+  border-radius: 24px;
+}
+
+.card__header,
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__header-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card__header-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  &.card__header-indicator--violet {
+    background-color: #7c3aed;
+  }
+
+  &.card__header-indicator--orange {
+    background-color: #f59e0b;
+  }
+
+  &.card__header-indicator--green {
+    background-color: #10b981;
+  }
+}
+
+.card__body {
+  font-weight: 700;
+  font-size: 44px;
+  color: #111827;
+}
+
+.card__footer-key {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.card__footer-value {
+  font-weight: 600;
+  font-size: 12px;
+  color: #10b981;
+}
